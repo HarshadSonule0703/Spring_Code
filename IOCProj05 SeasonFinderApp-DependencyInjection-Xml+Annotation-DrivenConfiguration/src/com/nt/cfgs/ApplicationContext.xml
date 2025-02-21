@@ -9,5 +9,10 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-
+	
+	<!-- enable component Scanning on the packages -->
+	<context:component-scan base-package="com.nt.sbeans"/>
+	
+	<!-- configure user define class as spring bean class -->
+	<bean id="ldate" class="java.time.LocalDate" factory-method="now"/>
 </beans>

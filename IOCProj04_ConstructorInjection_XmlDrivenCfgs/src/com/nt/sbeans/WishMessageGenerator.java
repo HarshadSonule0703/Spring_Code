@@ -20,7 +20,7 @@ public class WishMessageGenerator {
 		//getting current hour
 		int hour = time.getHour();
 		if(hour < 12)
-			return "Good Morning::"+user;
+			return "Hello :"+user;
 		else if(hour < 16)
 			return "Good Afternoon::"+user;
 		else if(hour < 20)
